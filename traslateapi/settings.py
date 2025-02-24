@@ -131,8 +131,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    "traslate/static/images",
+    os.path.join(BASE_DIR, "static",
+    "traslate/static/images")
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -146,4 +146,4 @@ LOGIN_REDIRECT_URL = '/inicio/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = ['localhost','cabala-production.up.railway.app']
+ALLOWED_HOSTS = ['*']
