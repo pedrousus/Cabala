@@ -139,3 +139,4 @@ LOGIN_REDIRECT_URL = '/inicio/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+ALLOWED_HOSTS = ['localhost','cabala-production.up.railway.app']
