@@ -114,7 +114,7 @@ def salir(request):
     
     
 # Diccionario del alfabeto hebreo con valores numerológicos
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "traslate/traslate-451505-d66aa3f4393b.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "traslate/traslate-451505-3dd398cbea06.json"
 
 def translate_to_hebrew(text):
     """

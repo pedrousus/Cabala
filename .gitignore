@@ -1,3 +1,5 @@
 venv
 _pycache_
-db.sqlite3
+db.sqlite3}
+.env
+traslate/traslate-451505-3dd398cbea06.json
