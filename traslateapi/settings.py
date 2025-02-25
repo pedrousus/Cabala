@@ -142,7 +142,8 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATIC_FILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 LOGIN_REDIRECT_URL = '/inicio/'
 
@@ -151,6 +152,6 @@ LOGIN_REDIRECT_URL = '/inicio/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['cabala-production.up.railway.app']
+ALLOWED_HOSTS = ['cabala-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://cabala-production.up.railway.app']
 
-ALLOWED_HOSTS = ['*']
